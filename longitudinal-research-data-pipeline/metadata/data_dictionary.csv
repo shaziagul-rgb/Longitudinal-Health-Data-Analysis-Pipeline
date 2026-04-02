@@ -1,0 +1,24 @@
+table,column,description,data_type,allowed_values_or_range,missing_allowed
+participants,participant_id,Unique participant identifier,INTEGER,Unique positive integer,No
+participants,sex,Participant sex,TEXT,M/F,No
+participants,birth_year,Year of birth,INTEGER,1900-2025,No
+participants,baseline_age,Age at baseline assessment,INTEGER,18-100,No
+participants,baseline_bmi,Baseline body mass index,REAL,10-80,Yes
+participants,baseline_systolic_bp,Baseline systolic blood pressure,REAL,60-250,Yes
+participants,baseline_questionnaire_score,Baseline questionnaire score,REAL,0-100,Yes
+assessments,participant_id,Participant identifier linked to participants table,INTEGER,Must exist in participants,No
+assessments,wave,Assessment wave,TINYINT,1-4,No
+assessments,assessment_date,Date of assessment,TEXT,ISO date YYYY-MM-DD,No
+assessments,bmi,Body mass index,REAL,10-80,Yes
+assessments,systolic_bp,Systolic blood pressure,REAL,60-250,Yes
+assessments,questionnaire_score,Questionnaire score,REAL,0-100,Yes
+statistical_results,outcome,Outcome analyzed,TEXT,BMI/Systolic BP/Questionnaire,No
+statistical_results,n,Number of participants with complete Wave 1 and Wave 4 measurements,INTEGER,Positive integer,No
+statistical_results,mean_change,Mean change from Wave 1 to Wave 4 (Wave 4 minus Wave 1),REAL,Numeric,No
+statistical_results,sd_change,Sample standard deviation of individual change scores,REAL,Non-negative numeric,No
+statistical_results,ci_lower,Lower bound of 95 percent confidence interval for mean change,REAL,Numeric,No
+statistical_results,ci_upper,Upper bound of 95 percent confidence interval for mean change,REAL,Numeric,No
+statistical_results,t_statistic,One-sample t statistic applied to individual change scores,REAL,Numeric,No
+statistical_results,df,Degrees of freedom for paired t-test,INTEGER,n-1,No
+statistical_results,paired_t_p,Two-sided paired t-test p-value,REAL,0-1,No
+statistical_results,wilcoxon_p,Two-sided Wilcoxon signed-rank test p-value,REAL,0-1,No
