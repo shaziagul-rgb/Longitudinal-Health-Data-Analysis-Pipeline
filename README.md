@@ -66,19 +66,38 @@ The analysis produces figures showing mean changes, individual participant traje
 
 ### Mean change from Wave 1 to Wave 4
 
-![Mean change from Wave 1 to Wave 4](figures/mean_change_95ci.png)
+<p align="center">
+  <img src="figures/mean_change_95ci.png" width="600">
+</p>
 
-The figure above summarises the mean change between Wave 1 and Wave 4 for BMI, systolic blood pressure, and questionnaire score, with 95% confidence intervals.
+The figure summarises the mean change between Wave 1 and Wave 4 for BMI, systolic blood pressure, and questionnaire score, with 95% confidence intervals.
 
-### Additional figures
+### Additional analysis figures
 
-The project also generates:
+<table>
+  <tr>
+    <td align="center">
+      <img src="figures/bmi_individual_trajectories.png" width="400"><br>
+      <em>Individual BMI trajectories</em>
+    </td>
+    <td align="center">
+      <img src="figures/bmi_change_distribution.png" width="400"><br>
+      <em>BMI change distribution</em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="figures/change_distributions.png" width="400"><br>
+      <em>Change distributions across outcomes</em>
+    </td>
+    <td align="center">
+      <img src="figures/mean_change_95ci.png" width="400"><br>
+      <em>Mean change with 95% CI</em>
+    </td>
+  </tr>
+</table>
 
-- **Individual BMI trajectories** — (figures/bmi_individual_trajectories.png`)
-- **BMI change distribution** — (figures/bmi_change_distribution.png)
-- **Change distributions across outcomes** — (figures/change_distributions.png)
-
-All figures are generated automatically by:
+Figures are generated automatically using:
 
 ```bash
 julia --project=. scripts/create_figures.jl
