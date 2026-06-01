@@ -1,4 +1,4 @@
-# Longitudinal Health Data Analysis Pipeline
+# Longitudinal Research Data Pipeline
 
 A reproducible Julia pipeline for analysing longitudinal participant data across four assessment waves.
 
@@ -62,45 +62,14 @@ data/processed/statistical_results.csv
 
 ## Figures
 
-The analysis produces figures showing mean changes, individual participant trajectories, and distributions of change.
+The analysis also produces figures showing the main changes and individual variation.
 
-### Mean change from Wave 1 to Wave 4
+![Mean change from Wave 1 to Wave 4](figures/mean_change_95ci.png)
 
-<p align="center">
-  <img src="figures/mean_change_95ci.png" width="600">
-</p>
+Additional figures are saved in:
 
-The figure summarises the mean change between Wave 1 and Wave 4 for BMI, systolic blood pressure, and questionnaire score, with 95% confidence intervals.
-
-### Additional analysis figures
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="figures/bmi_individual_trajectories.png" width="400"><br>
-      <em>Individual BMI trajectories</em>
-    </td>
-    <td align="center">
-      <img src="figures/bmi_change_distribution.png" width="400"><br>
-      <em>BMI change distribution</em>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="figures/change_distributions.png" width="400"><br>
-      <em>Change distributions across outcomes</em>
-    </td>
-    <td align="center">
-      <img src="figures/mean_change_95ci.png" width="400"><br>
-      <em>Mean change with 95% CI</em>
-    </td>
-  </tr>
-</table>
-
-Figures are generated automatically using:
-
-```bash
-julia --project=. scripts/create_figures.jl
+```text
+figures/
 ```
 
 ## Project structure
