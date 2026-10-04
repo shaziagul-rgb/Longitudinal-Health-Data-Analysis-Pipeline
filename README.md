@@ -76,32 +76,38 @@ The figure above summarises the mean change between Wave 1 and Wave 4 for BMI, s
 
 <table>
 <tr>
-<td align="center">
+<td align="center" width="50%">
 
-<b>Individual BMI trajectories</b>
+<strong>Individual BMI trajectories</strong>
 
 <br><br>
 
-<img src="figures/bmi_individual_trajectories.png" alt="Individual BMI trajectories" width="400">
+<img src="figures/bmi_individual_trajectories.png" alt="Individual BMI trajectories" width="360">
 
 </td>
-<td align="center">
+<td align="center" width="50%">
 
-<b>BMI change distribution</b>
+<strong>BMI change distribution</strong>
 
 <br><br>
 
-<img src="figures/bmi_change_distribution.png" alt="BMI change distribution" width="400">
+<img src="figures/bmi_change_distribution.png" alt="BMI change distribution" width="360">
 
 </td>
 </tr>
 </table>
 
-<p align="center">
-  <b>Change distributions across outcomes</b>
-  <br><br>
-  <img src="figures/change_distributions.png" alt="Change distributions across outcomes" width="500">
-</p>
+<br>
+
+<div align="center">
+
+<strong>Change distributions across outcomes</strong>
+
+<br><br>
+
+<img src="figures/change_distributions.png" alt="Change distributions across outcomes" width="500">
+
+</div>
 
 All figures are generated automatically by:
 
