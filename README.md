@@ -74,7 +74,7 @@ The figure above summarises the mean change between Wave 1 and Wave 4 for BMI, s
 
 The project also generates:
 
-- **Individual BMI trajectories** — (figures/bmi_individual_trajectories.png`)
+- **Individual BMI trajectories** — (figures/bmi_individual_trajectories.png)
 - **BMI change distribution** — (figures/bmi_change_distribution.png)
 - **Change distributions across outcomes** — (figures/change_distributions.png)
 
