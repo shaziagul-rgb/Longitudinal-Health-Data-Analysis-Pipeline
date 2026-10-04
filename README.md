@@ -70,13 +70,17 @@ The analysis produces figures showing mean changes, individual participant traje
 
 The figure above summarises the mean change between Wave 1 and Wave 4 for BMI, systolic blood pressure, and questionnaire score, with 95% confidence intervals.
 
-### Additional figures
+### Individual BMI trajectories
 
-The project also generates:
+![Individual BMI trajectories](figures/bmi_individual_trajectories.png)
 
-- **Individual BMI trajectories** — (figures/bmi_change_distribution.png)
-- **BMI change distribution** — (figures/bmi_change_distribution.png)
-- **Change distributions across outcomes** — (figures/change_distributions.png)
+### BMI change distribution
+
+![BMI change distribution](figures/bmi_change_distribution.png)
+
+### Change distributions across outcomes
+
+![Change distributions across outcomes](figures/change_distributions.png)
 
 All figures are generated automatically by:
 
